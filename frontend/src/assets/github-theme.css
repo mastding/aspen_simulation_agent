@@ -1,0 +1,290 @@
+/* ===== GitHub-style unified theme for settings pages ===== */
+
+/* --- Section panel (white card with border) --- */
+.gh-panel {
+  background: #fff;
+  border: 1px solid #d1d9e0;
+  border-radius: 6px;
+}
+.gh-panel-header {
+  padding: 12px 16px;
+  border-bottom: 1px solid #d1d9e0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.gh-panel-header-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2328;
+}
+.gh-panel-header-sub {
+  font-size: 12px;
+  color: #656d76;
+}
+.gh-panel-body {
+  padding: 16px;
+}
+
+/* --- Section heading --- */
+.gh-heading {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2328;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #d1d9e0;
+  margin-bottom: 16px;
+}
+
+/* --- Buttons --- */
+.gh-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid #d1d9e0;
+  background: #f6f8fa;
+  color: #1f2328;
+  cursor: pointer;
+  transition: background .15s, border-color .15s;
+  white-space: nowrap;
+}
+.gh-btn:hover {
+  background: #eaeef2;
+  border-color: #bbc0c5;
+}
+.gh-btn:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.gh-btn-primary {
+  background: #1f883d;
+  color: #fff;
+  border-color: #1a7f37;
+}
+.gh-btn-primary:hover {
+  background: #1a7f37;
+}
+
+.gh-btn-danger {
+  background: #fff;
+  color: #d1242f;
+  border-color: #d1d9e0;
+}
+.gh-btn-danger:hover {
+  background: #d1242f;
+  color: #fff;
+  border-color: #d1242f;
+}
+
+/* --- Form controls --- */
+.gh-input,
+.gh-select {
+  padding: 5px 12px;
+  font-size: 13px;
+  line-height: 20px;
+  color: #1f2328;
+  background: #fff;
+  border: 1px solid #d1d9e0;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color .15s, box-shadow .15s;
+}
+.gh-input:focus,
+.gh-select:focus {
+  border-color: #0969da;
+  box-shadow: 0 0 0 3px rgba(9,105,218,.12);
+}
+
+/* --- Badges / Labels --- */
+.gh-label {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 9999px;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+.gh-label-success {
+  background: #dafbe1;
+  color: #1a7f37;
+  border-color: #aceebb;
+}
+.gh-label-danger {
+  background: #ffebe9;
+  color: #d1242f;
+  border-color: #ffcecb;
+}
+.gh-label-warning {
+  background: #fff8c5;
+  color: #9a6700;
+  border-color: #f5e0a0;
+}
+.gh-label-info {
+  background: #ddf4ff;
+  color: #0969da;
+  border-color: #b6e3ff;
+}
+.gh-label-muted {
+  background: #eaeef2;
+  color: #656d76;
+  border-color: #d1d9e0;
+}
+.gh-label-purple {
+  background: #fbefff;
+  color: #8250df;
+  border-color: #e6d0ff;
+}
+
+/* --- Stat cards --- */
+.gh-stat-card {
+  background: #fff;
+  border: 1px solid #d1d9e0;
+  border-radius: 6px;
+  padding: 12px 16px;
+}
+.gh-stat-label {
+  font-size: 12px;
+  color: #656d76;
+}
+.gh-stat-value {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2328;
+  margin-top: 2px;
+}
+
+/* --- Tables --- */
+.gh-table {
+  width: 100%;
+  font-size: 13px;
+  border-collapse: collapse;
+}
+.gh-table thead th {
+  text-align: left;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1f2328;
+  background: #f6f8fa;
+  border-bottom: 1px solid #d1d9e0;
+}
+.gh-table tbody td {
+  padding: 8px 12px;
+  color: #1f2328;
+  border-bottom: 1px solid #eaeef2;
+  vertical-align: top;
+}
+.gh-table tbody tr:last-child td {
+  border-bottom: none;
+}
+.gh-table tbody tr:hover {
+  background: #f6f8fa;
+}
+
+/* --- Column resize handle --- */
+.col-resize-handle {
+  position: absolute;
+  right: -3px;
+  top: 25%;
+  bottom: 25%;
+  width: 7px;
+  cursor: col-resize;
+  background: transparent;
+  border-left: 1px solid #d1d9e0;
+  border-radius: 0;
+  z-index: 1;
+  transition: border-color 0.15s;
+}
+.col-resize-handle:hover,
+.col-resize-handle:active {
+  border-left-color: #0969da;
+}
+.gh-table.resizable-table {
+  table-layout: fixed;
+}
+.gh-table.resizable-table td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* --- Text link --- */
+.gh-link {
+  color: #0969da;
+  text-decoration: none;
+  font-size: 13px;
+}
+.gh-link:hover {
+  text-decoration: underline;
+}
+
+/* --- Divider --- */
+.gh-divider {
+  border: 0;
+  border-top: 1px solid #d1d9e0;
+  margin: 16px 0;
+}
+
+/* --- Code block --- */
+.gh-code {
+  font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 12px;
+  background: #f6f8fa;
+  border: 1px solid #d1d9e0;
+  border-radius: 6px;
+  padding: 12px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  color: #1f2328;
+}
+
+/* --- Checkbox / Radio for list items --- */
+.gh-check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid #d1d9e0;
+  border-radius: 6px;
+  background: #fff;
+}
+
+/* --- Empty state --- */
+.gh-empty {
+  text-align: center;
+  padding: 32px 16px;
+  color: #656d76;
+  font-size: 14px;
+}
+
+/* --- Collapsible section toggle --- */
+.gh-collapse-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1f2328;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.gh-collapse-btn svg {
+  width: 16px;
+  height: 16px;
+  color: #656d76;
+  transition: transform .15s;
+}
+.gh-collapse-btn[aria-expanded="false"] svg {
+  transform: rotate(-90deg);
+}

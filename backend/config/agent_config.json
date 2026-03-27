@@ -1,0 +1,7 @@
+{
+  "tool_call_strategy": "auto",
+  "max_steps": 100,
+  "show_thinking": true,
+  "max_concurrent_tasks": 5,
+  "error_handling": "retry"
+}

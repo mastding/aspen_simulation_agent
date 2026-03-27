@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Node
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# Build / Package
+*.zip
+*.tar.gz
+
+# Images (screenshots etc.)
+*.png
+*.jpg
+*.jpeg
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Env
+.env
+.env.*
+
+# Logs
+*.log
+
+# PID files
+*.pid
+
+# Database
+*.db
+
+# SSL certificates
+*.pem
+
+# Runtime data (memory docs, training outputs)
+backend/data/training/memory_docs/
+backend/rl_data/memory_docs/
+backend/rl/outputs/policy/
+backend/rl/outputs/training_runs/
+
+# One-off scripts
+move_rl_to_backend.sh
+refactor_structure.sh
